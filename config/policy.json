@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "1.0",
+  "project": "GitOps-Secrets-KeyVault-Sops",
+  "rank": 28,
+  "action": "plan_gitops_secrets_keyvault_sops",
+  "allowedCredentialModes": [
+    "managed_identity",
+    "workload_identity"
+  ],
+  "protectedTargets": [
+    "production",
+    "break-glass"
+  ],
+  "allowedTenantIds": [
+    "tenant-a"
+  ]
+}

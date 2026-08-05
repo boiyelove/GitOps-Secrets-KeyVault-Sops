@@ -2,6 +2,19 @@
 
 Demonstrate safe encrypted-secret delivery for GitOps-managed AKS environments.
 
+## Project metadata
+
+The metadata below is derived from tracked source, manifests, and infrastructure
+files. It describes what this repository includes; live-service integration remains
+bounded by the documented deployment and validation limitations.
+
+| Category | Included |
+| --- | --- |
+| Platforms | Microsoft Azure; GitHub Actions; Kubernetes |
+| Services and stack | Key Vault; Bicep; Argo CD; Flux; SOPS |
+| Languages and formats | Python; Bicep; Bicep parameters; Bash; JSON; YAML |
+| Delivery and IaC | Bicep + `.bicepparam`; GitHub Actions CI; Kubernetes/YAML manifests; Python validation/tests |
+
 ## Problem statement
 
 An encrypted-secret delivery request maps a Git path and workload identity to Key Vault-backed decryption, rejecting plaintext values, public paths, unknown actions, and stale approvals.
